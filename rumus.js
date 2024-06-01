@@ -1,18 +1,13 @@
 
-class Rumus {
-    HitungVolume(r) {
-        // Memastikan parameter r tidak kosong
-        if (r === undefined || r === null) {
-            throw('jari jari tidak boleh kosong');
-        }
-        // Memastikan bahwa r adalah tipe data angka
-        if (typeof r !== 'number') {
-            throw('jari jari harus bertipe data angka');
-        }
+function HiitungVolumeBola(r){
+    // Memastikan parameter r tidak kosong
+    if (r === undefined || r === null) return "Jari jari tidak boleh kosong"
+    // Memastikan bahwa r adalah tipe data angka
+    if (typeof r !== 'number') return "Jari jari harus bertipe data angka"
 
-        // Hitung rumus volume bola
-        return ((4 / 3) * Math.PI * Math.pow(r, 3));
-    }
+    let RumusBola = (4 / 3) * Math.PI * Math.pow(r, 3)
+
+    return RumusBola
+
 }
-
-export default Rumus;
+export default HiitungVolumeBola
